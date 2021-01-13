@@ -4,4 +4,83 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NumPlayer"/>
+    tools:context=".NumPlayer">
+
+    <EditText
+        android:id="@+id/Text3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginBottom="307dp"
+        android:ems="10"
+        android:hint="Giocatore 3"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Text4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text1" />
+
+    <EditText
+        android:id="@+id/Text2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="199dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginBottom="141dp"
+        android:ems="10"
+        android:hint="Giocatore 2"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/Text4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Text1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Text4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginBottom="96dp"
+        android:ems="10"
+        android:hint="Giocatore 4"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Text3"
+        app:layout_constraintTop_toBottomOf="@+id/Text2" />
+
+    <EditText
+        android:id="@+id/Text1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="199dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginBottom="141dp"
+        android:ems="10"
+        android:hint="Giocatore 1"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/Text3"
+        app:layout_constraintEnd_toStartOf="@+id/Text2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="141dp"
+        android:padding="25dp"
+        android:text="Start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text4" />
+</androidx.constraintlayout.widget.ConstraintLayout>
