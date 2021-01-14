@@ -99,4 +99,21 @@ public class Data {
         Data.player4point += point;
     }
 
+    //metodi per togliere punti
+    public static void subPlapoint1(int point){
+        Data.player1point -= point;
+    }
+
+    public static void subPlapoint2(int point){
+        Data.player2point -= point;
+    }
+
+    public static void subPlapoint3(int point){
+        Data.player3point -= point;
+    }
+
+    public static void subPlapoint4(int point){
+        Data.player4point -= point;
+    }
+
 }

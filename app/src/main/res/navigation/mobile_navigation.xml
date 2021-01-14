@@ -20,6 +20,16 @@
         android:name="com.example.contaking.Fragment.No_k_No_j"
         android:label="NO K NO J"
         tools:layout="@layout/fragment_no_k__no_j" >
+        <action
+            android:id="@+id/action_navigation_noKnoJ_to_navigation_noQ"
+            app:destination="@id/navigation_noQ" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_noQ"
+        android:name="com.example.contaking.Fragment.No_q"
+        android:label="NO Q"
+        tools:layout="@layout/fragment_no_q" >
     </fragment>
 
 

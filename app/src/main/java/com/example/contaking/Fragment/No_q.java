@@ -3,7 +3,6 @@ package com.example.contaking.Fragment;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-import androidx.navigation.fragment.NavHostFragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,8 +14,7 @@ import android.widget.TextView;
 import com.example.contaking.Model.Data;
 import com.example.contaking.R;
 
-
-public class No_k_No_j extends Fragment {
+public class No_q extends Fragment {
 
     private TextView giocatore1;
     private TextView giocatore2;
@@ -33,13 +31,13 @@ public class No_k_No_j extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_no_k__no_j, container, false);
+        View view = inflater.inflate(R.layout.fragment_no_q, container, false);
 
         //collegiamo i componenti
         giocatore1 = (TextView) view.findViewById(R.id.G1);
@@ -66,13 +64,13 @@ public class No_k_No_j extends Fragment {
                 Data.subPlapoint2(Integer.parseInt(String.valueOf(point2.getText())));
                 Data.subPlapoint3(Integer.parseInt(String.valueOf(point3.getText())));
                 Data.subPlapoint4(Integer.parseInt(String.valueOf(point4.getText())));
-
-                //cambio fragment
-                NavHostFragment.findNavController(No_k_No_j.this)
-                        .navigate(R.id.action_navigation_noKnoJ_to_navigation_noQ);
+                System.out.println(Data.getPlayer1point());
+                System.out.println(Data.getPlayer2point());
+                System.out.println(Data.getPlayer3point());
+                System.out.println(Data.getPlayer4point());
             }
         });
 
-        return view;
+        return  view;
     }
 }
