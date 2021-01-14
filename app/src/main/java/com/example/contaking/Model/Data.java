@@ -81,4 +81,22 @@ public class Data {
     public static void setPlayer4point(int player4point) {
         Data.player4point = player4point;
     }
+
+    //metodi per aggiungere i punti
+    public static void addPlayerpoin1(int point){
+        Data.player1point += point;
+    }
+
+    public static void addPlayerpoin2(int point){
+        Data.player2point += point;
+    }
+
+    public static void addPlayerpoin3(int point){
+        Data.player3point += point;
+    }
+
+    public static void addPlayerpoin4(int point){
+        Data.player4point += point;
+    }
+
 }
