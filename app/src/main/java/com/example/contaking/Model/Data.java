@@ -1,4 +1,4 @@
-package com.example.contaking;
+package com.example.contaking.Model;
 
 //classe dei dati, qui si salveranno tutti i dati che richiedono una persistenza temporanea
 

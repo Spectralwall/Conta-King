@@ -7,9 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_NumPlayer"
-        android:name="com.example.contaking.NumPlayer"
+        android:name="com.example.contaking.Fragment.NumPlayer"
         android:label="Numero Player"
         tools:layout="@layout/fragment_num_player" >
+        <action
+            android:id="@+id/action_navigation_NumPlayer_to_navigation_noKnoJ"
+            app:destination="@id/navigation_noKnoJ" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_noKnoJ"
+        android:name="com.example.contaking.Fragment.No_k_No_j"
+        android:label="NO K NO J"
+        tools:layout="@layout/fragment_no_k__no_j" >
     </fragment>
 
 
