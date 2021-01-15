@@ -30,6 +30,26 @@
         android:name="com.example.contaking.Fragment.No_q"
         android:label="NO Q"
         tools:layout="@layout/fragment_no_q" >
+        <action
+            android:id="@+id/action_navigation_noQ_to_navigation_no8_di_quadri"
+            app:destination="@id/navigation_no8_di_quadri" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_no8_di_quadri"
+        android:name="com.example.contaking.Fragment.No_8_di_quadri"
+        android:label="NO 8 DI QUADRI"
+        tools:layout="@layout/fragment_no_8_di_quadri" >
+        <action
+            android:id="@+id/action_navigation_no8_di_quadri_to_navigation_no_re_di_cuori"
+            app:destination="@id/navigation_no_re_di_cuori" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_no_re_di_cuori"
+        android:name="com.example.contaking.Fragment.No_re_di_cuori"
+        android:label="NO RE DI CUORI"
+        tools:layout="@layout/fragment_no_re_di_cuori" >
     </fragment>
 
 
