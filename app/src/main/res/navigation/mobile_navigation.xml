@@ -70,6 +70,16 @@
         android:name="com.example.contaking.Fragment.No_ultime_due"
         android:label="NO ULTIME DUE"
         tools:layout="@layout/fragment_no_ultime_due" >
+        <action
+            android:id="@+id/action_navigation_no_ultime_due_to_navigation_meno_prese"
+            app:destination="@id/navigation_meno_prese" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_meno_prese"
+        android:name="com.example.contaking.Fragment.Meno_prese"
+        android:label="MENO PRESE"
+        tools:layout="@layout/fragment_meno_prese" >
     </fragment>
 
 
