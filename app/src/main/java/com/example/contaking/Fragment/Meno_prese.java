@@ -16,7 +16,7 @@ import com.example.contaking.Model.Data;
 import com.example.contaking.R;
 
 
-public class No_ultime_due extends Fragment {
+public class Meno_prese extends Fragment {
 
     private TextView giocatore1;
     private TextView giocatore2;
@@ -40,7 +40,7 @@ public class No_ultime_due extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_no_ultime_due, container, false);
+        View view = inflater.inflate(R.layout.fragment_meno_prese, container, false);
 
         //collegiamo i componenti
         giocatore1 = (TextView) view.findViewById(R.id.G1);
@@ -69,11 +69,12 @@ public class No_ultime_due extends Fragment {
                 Data.subPlapoint4(Integer.parseInt(String.valueOf(point4.getText())));
 
                 //cambio fragment
-                NavHostFragment.findNavController(No_ultime_due.this)
-                        .navigate(R.id.action_navigation_no_ultime_due_to_navigation_meno_prese);
+                NavHostFragment.findNavController(Meno_prese.this)
+                        .navigate(R.id.action_navigation_no8_di_quadri_to_navigation_no_re_di_cuori);
             }
         });
 
-        return  view;
+        return view;
+
     }
 }
