@@ -15,8 +15,7 @@ import android.widget.TextView;
 import com.example.contaking.Model.Data;
 import com.example.contaking.R;
 
-
-public class No_8_di_quadri extends Fragment {
+public class No_cuori extends Fragment {
 
     private TextView giocatore1;
     private TextView giocatore2;
@@ -34,12 +33,13 @@ public class No_8_di_quadri extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-    }
+}
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_no_8_di_quadri, container, false);
+        // Inflate the layout for this fragment
+        View view = inflater.inflate(R.layout.fragment_no_cuori, container, false);
 
         //collegiamo i componenti
         giocatore1 = (TextView) view.findViewById(R.id.G1);
@@ -68,8 +68,8 @@ public class No_8_di_quadri extends Fragment {
                 Data.subPlapoint4(Integer.parseInt(String.valueOf(point4.getText())));
 
                 //cambio fragment
-                NavHostFragment.findNavController(No_8_di_quadri.this)
-                        .navigate(R.id.action_navigation_no8_di_quadri_to_navigation_no_re_di_cuori);
+                NavHostFragment.findNavController(No_cuori.this)
+                        .navigate(R.id.action_navigation_no_cuori_to_navigation_no_ultime_due);
             }
         });
 

@@ -50,6 +50,26 @@
         android:name="com.example.contaking.Fragment.No_re_di_cuori"
         android:label="NO RE DI CUORI"
         tools:layout="@layout/fragment_no_re_di_cuori" >
+        <action
+            android:id="@+id/action_navigation_no_re_di_cuori_to_navigation_no_cuori"
+            app:destination="@id/navigation_no_cuori" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_no_cuori"
+        android:name="com.example.contaking.Fragment.No_cuori"
+        android:label="NO CUORI"
+        tools:layout="@layout/fragment_no_cuori" >
+        <action
+            android:id="@+id/action_navigation_no_cuori_to_navigation_no_ultime_due"
+            app:destination="@id/navigation_no_ultime_due" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_no_ultime_due"
+        android:name="com.example.contaking.Fragment.No_ultime_due"
+        android:label="NO ULTIME DUE"
+        tools:layout="@layout/fragment_no_ultime_due" >
     </fragment>
 
 
