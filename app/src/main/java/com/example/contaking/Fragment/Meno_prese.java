@@ -70,7 +70,7 @@ public class Meno_prese extends Fragment {
 
                 //cambio fragment
                 NavHostFragment.findNavController(Meno_prese.this)
-                        .navigate(R.id.action_navigation_no8_di_quadri_to_navigation_no_re_di_cuori);
+                        .navigate(R.id.action_navigation_meno_prese_to_navigation_win_domino);
             }
         });
 

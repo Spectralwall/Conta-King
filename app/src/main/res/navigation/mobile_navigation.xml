@@ -80,6 +80,26 @@
         android:name="com.example.contaking.Fragment.Meno_prese"
         android:label="MENO PRESE"
         tools:layout="@layout/fragment_meno_prese" >
+        <action
+            android:id="@+id/action_navigation_meno_prese_to_navigation_win_domino"
+            app:destination="@id/navigation_win_domino" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_win_domino"
+        android:name="com.example.contaking.Fragment.win_domino"
+        android:label="CHI A VINTO A DOMINO"
+        tools:layout="@layout/fragment_win_domino" >
+        <action
+            android:id="@+id/action_navigation_win_domino_to_navigation_domino"
+            app:destination="@id/navigation_domino" />
+    </fragment>\
+
+    <fragment
+        android:id="@+id/navigation_domino"
+        android:name="com.example.contaking.Fragment.Domino"
+        android:label="DOMINO"
+        tools:layout="@layout/fragment_domino" >
     </fragment>
 
 

@@ -5,16 +5,19 @@ package com.example.contaking.Model;
 public class Data {
 
     //salvare nomi dei giocatori
-    public static String player1;
-    public static String player2;
-    public static String player3;
-    public static String player4;
+    private static String player1;
+    private static String player2;
+    private static String player3;
+    private static String player4;
 
     //punteggi giocatori
-    public static int player1point;
-    public static int player2point;
-    public static int player3point;
-    public static int player4point;
+    private static int player1point;
+    private static int player2point;
+    private static int player3point;
+    private static int player4point;
+
+    //variabili extra
+    private static String domino;
 
     //metodi get
     public static int getPlayer1point() {
@@ -49,6 +52,10 @@ public class Data {
         return player4;
     }
 
+    public static String getDomino() {
+        return domino;
+    }
+
     //metodi set
     public static void setPlayer1(String player1) {
         Data.player1 = player1;
@@ -80,6 +87,10 @@ public class Data {
 
     public static void setPlayer4point(int player4point) {
         Data.player4point = player4point;
+    }
+
+    public static void setDomino(String domino) {
+        Data.domino = domino;
     }
 
     //metodi per aggiungere i punti
