@@ -68,6 +68,11 @@ public class Meno_prese extends Fragment {
                 Data.subPlapoint3(Integer.parseInt(String.valueOf(point3.getText())));
                 Data.subPlapoint4(Integer.parseInt(String.valueOf(point4.getText())));
 
+                System.out.println(Data.getPlayer1point());
+                System.out.println(Data.getPlayer2point());
+                System.out.println(Data.getPlayer3point());
+                System.out.println(Data.getPlayer4point());
+
                 //cambio fragment
                 NavHostFragment.findNavController(Meno_prese.this)
                         .navigate(R.id.action_navigation_meno_prese_to_navigation_win_domino);

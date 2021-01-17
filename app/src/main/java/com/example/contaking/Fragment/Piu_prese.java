@@ -68,6 +68,11 @@ public class Piu_prese extends Fragment {
                 Data.addPlayerpoin3(Integer.parseInt(String.valueOf(point3.getText())));
                 Data.addPlayerpoin4(Integer.parseInt(String.valueOf(point4.getText())));
 
+                System.out.println(Data.getPlayer1point());
+                System.out.println(Data.getPlayer2point());
+                System.out.println(Data.getPlayer3point());
+                System.out.println(Data.getPlayer4point());
+
                 //cambio fragment
                 NavHostFragment.findNavController(Piu_prese.this)
                         .navigate(R.id.action_navigation_piuPrese_to_navigation_finePartita);

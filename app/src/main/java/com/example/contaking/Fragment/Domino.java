@@ -144,6 +144,12 @@ public class Domino extends Fragment {
                     Data.subPlapoint3(Integer.parseInt(String.valueOf(point3.getText())));
                     Data.subPlapoint1(Integer.parseInt(String.valueOf(point1.getText())));
                 }
+
+                System.out.println(Data.getPlayer1point());
+                System.out.println(Data.getPlayer2point());
+                System.out.println(Data.getPlayer3point());
+                System.out.println(Data.getPlayer4point());
+
                 //cambio fragment
                 NavHostFragment.findNavController(Domino.this)
                         .navigate(R.id.action_navigation_domino_to_navigation_dichiarazione1);
