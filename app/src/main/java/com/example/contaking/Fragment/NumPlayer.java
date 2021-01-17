@@ -55,6 +55,7 @@ public class NumPlayer extends Fragment {
                 Data.setPlayer4(giocatore4.getText().toString());
 
                 //cambio fragment
+
                 NavHostFragment.findNavController(NumPlayer.this)
                         .navigate(R.id.action_navigation_NumPlayer_to_navigation_noKnoJ);
             }

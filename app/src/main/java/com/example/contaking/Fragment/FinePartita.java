@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -74,21 +75,26 @@ public class FinePartita extends Fragment {
         text.add(postp_2);
         text.add(postp_1);
 
-        for(int i = 0; i<point.length; i++){
-           if(point[i] == Data.getPlayer1point()){
-               punt.get(i).setText(Data.getPlayer1point());
-               text.get(i).setText(Data.getPlayer1());
-           }else if(point[i] == Data.getPlayer2point()){
-               punt.get(i).setText(Data.getPlayer2point());
-               text.get(i).setText(Data.getPlayer2());
-           }else if(point[i] == Data.getPlayer3point()){
-               punt.get(i).setText(Data.getPlayer3point());
-               text.get(i).setText(Data.getPlayer3());
-           }else if(point[i] == Data.getPlayer4point()){
-               punt.get(i).setText(Data.getPlayer4point());
-               text.get(i).setText(Data.getPlayer4());
-           }
+        try {
+            for(int i = 0; i<point.length; i++){
+                if(point[i] == Data.getPlayer1point()){
+                    punt.get(i).setText(String.valueOf(Data.getPlayer1point()));
+                    text.get(i).setText(Data.getPlayer1());
+                }else if(point[i] == Data.getPlayer2point()){
+                    punt.get(i).setText(String.valueOf(Data.getPlayer2point()));
+                    text.get(i).setText(Data.getPlayer2());
+                }else if(point[i] == Data.getPlayer3point()){
+                    punt.get(i).setText(String.valueOf(Data.getPlayer3point()));
+                    text.get(i).setText(Data.getPlayer3());
+                }else if(point[i] == Data.getPlayer4point()){
+                    punt.get(i).setText(String.valueOf(Data.getPlayer4point()));
+                    text.get(i).setText(Data.getPlayer4());
+                }
+            }
+        }catch (Exception a){
+            Log.e("ERRORE", "" + a);//scrivvo sul log
         }
+
         ricomincia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
