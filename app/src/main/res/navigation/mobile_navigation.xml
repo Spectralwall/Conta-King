@@ -100,6 +100,16 @@
         android:name="com.example.contaking.Fragment.Domino"
         android:label="DOMINO"
         tools:layout="@layout/fragment_domino" >
+        <action
+            android:id="@+id/action_navigation_domino_to_navigation_dichiarazione1"
+            app:destination="@id/navigation_dichiarazione1" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dichiarazione1"
+        android:name="com.example.contaking.Fragment.Dichiarazione1"
+        android:label="PRIMA DICHIARAZIONE"
+        tools:layout="@layout/fragment_dichiarazione1" >
     </fragment>
 
 

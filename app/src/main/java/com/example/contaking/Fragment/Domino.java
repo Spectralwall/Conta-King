@@ -146,7 +146,7 @@ public class Domino extends Fragment {
                 }
                 //cambio fragment
                 NavHostFragment.findNavController(Domino.this)
-                        .navigate(R.id.action_navigation_meno_prese_to_navigation_win_domino);
+                        .navigate(R.id.action_navigation_domino_to_navigation_dichiarazione1);
             }
         });
 
