@@ -127,4 +127,16 @@ public class Data {
         Data.player4point -= point;
     }
 
+    //metodo per pulire i dati per una nuova partita
+    public static void deleteData(){
+        player1point = 0;
+        player2point = 0;
+        player3point = 0;
+        player4point = 0;
+        player1 = "";
+        player2 = "";
+        player3 = "";
+        player4 = "";
+    }
+
 }

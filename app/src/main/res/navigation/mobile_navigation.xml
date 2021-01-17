@@ -160,6 +160,9 @@
         android:name="com.example.contaking.Fragment.FinePartita"
         android:label="Fine Partita"
         tools:layout="@layout/fragment_fine_partita" >
+        <action
+            android:id="@+id/action_navigation_finePartita_to_navigation_NumPlayer"
+            app:destination="@id/navigation_NumPlayer" />
     </fragment>
 
 
