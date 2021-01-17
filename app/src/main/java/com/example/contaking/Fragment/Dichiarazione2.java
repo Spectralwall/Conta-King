@@ -15,8 +15,7 @@ import android.widget.TextView;
 import com.example.contaking.Model.Data;
 import com.example.contaking.R;
 
-
-public class Dichiarazione1 extends Fragment {
+public class Dichiarazione2 extends Fragment {
 
     private TextView giocatore1;
     private TextView giocatore2;
@@ -40,7 +39,7 @@ public class Dichiarazione1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_dichiarazione1, container, false);
+        View view = inflater.inflate(R.layout.fragment_dichiarazione2, container, false);
 
         //collegiamo i componenti
         giocatore1 = (TextView) view.findViewById(R.id.G1);
@@ -69,11 +68,11 @@ public class Dichiarazione1 extends Fragment {
                 Data.addPlayerpoin4(Integer.parseInt(String.valueOf(point4.getText())));
 
                 //cambio fragment
-                NavHostFragment.findNavController(Dichiarazione1.this)
-                        .navigate(R.id.action_navigation_dichiarazione1_to_navigation_dichiarazione2);
+                NavHostFragment.findNavController(Dichiarazione2.this)
+                        .navigate(R.id.action_navigation_dichiarazione2_to_navigation_dichiarazione3);
             }
         });
 
-        return view;
+        return  view;
     }
 }

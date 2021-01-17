@@ -110,6 +110,46 @@
         android:name="com.example.contaking.Fragment.Dichiarazione1"
         android:label="PRIMA DICHIARAZIONE"
         tools:layout="@layout/fragment_dichiarazione1" >
+        <action
+            android:id="@+id/action_navigation_dichiarazione1_to_navigation_dichiarazione2"
+            app:destination="@id/navigation_dichiarazione2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dichiarazione2"
+        android:name="com.example.contaking.Fragment.Dichiarazione2"
+        android:label="SECONDA DICHIARAZIONE"
+        tools:layout="@layout/fragment_dichiarazione2" >
+        <action
+            android:id="@+id/action_navigation_dichiarazione2_to_navigation_dichiarazione3"
+            app:destination="@id/navigation_dichiarazione3" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dichiarazione3"
+        android:name="com.example.contaking.Fragment.Dichiarazione3"
+        android:label="TERZA DICHIARAZIONE"
+        tools:layout="@layout/fragment_dichiarazione3" >
+        <action
+            android:id="@+id/action_navigation_dichiarazione3_to_navigation_dichiarazione4"
+            app:destination="@id/navigation_dichiarazione4" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dichiarazione4"
+        android:name="com.example.contaking.Fragment.Dichiarazione4"
+        android:label="Quarta DICHIARAZIONE"
+        tools:layout="@layout/fragment_dichiarazione4" >
+        <action
+            android:id="@+id/action_navigation_dichiarazione4_to_navigation_piuPrese"
+            app:destination="@id/navigation_piuPrese" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_piuPrese"
+        android:name="com.example.contaking.Fragment.Piu_prese"
+        android:label="Piu prese"
+        tools:layout="@layout/fragment_piu_prese" >
     </fragment>
 
 
