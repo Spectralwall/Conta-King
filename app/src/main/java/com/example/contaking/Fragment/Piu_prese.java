@@ -70,7 +70,7 @@ public class Piu_prese extends Fragment {
 
                 //cambio fragment
                 NavHostFragment.findNavController(Piu_prese.this)
-                        .navigate(R.id.action_navigation_dichiarazione1_to_navigation_dichiarazione2);
+                        .navigate(R.id.action_navigation_piuPrese_to_navigation_finePartita);
             }
         });
 

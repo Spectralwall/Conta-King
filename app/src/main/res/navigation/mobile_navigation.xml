@@ -150,6 +150,16 @@
         android:name="com.example.contaking.Fragment.Piu_prese"
         android:label="Piu prese"
         tools:layout="@layout/fragment_piu_prese" >
+        <action
+            android:id="@+id/action_navigation_piuPrese_to_navigation_finePartita"
+            app:destination="@id/navigation_finePartita" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_finePartita"
+        android:name="com.example.contaking.Fragment.FinePartita"
+        android:label="Fine Partita"
+        tools:layout="@layout/fragment_fine_partita" >
     </fragment>
 
 
